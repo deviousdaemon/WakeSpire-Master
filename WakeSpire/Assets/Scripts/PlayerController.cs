@@ -8,11 +8,12 @@ public class PlayerController : MonoBehaviour {
     private Animator animator;
     private bool playerMoving;
     private Vector2 lastMove;
+    private float playerMoveSpeed;
 
 	// Use this for initialization
 	void Start () {
-        walkSpeed = 4f;
-        moveSpeed = 6f;
+        walkSpeed = 2f;
+        moveSpeed = 4f;
         animator = GetComponent<Animator>();
 	}
 	
